@@ -1,0 +1,46 @@
+Fastest O(1) constant tc
+2nd O(log n) logarethamic tc
+3rd O(n) linear tc
+4th O(nlog n) quazi linear tc
+5th O(n**2) quadratic tc
+6th O(n**n) exponential tc
+
+Algorithams
+1. 2 pointer approch 
+   nested for loop
+   single for loop
+2. sliding window
+3.Greedy 
+    largests, smallest,
+4.Bit Manipulation
+5.Stacks
+6.Hepificaion
+7.Hashing
+8.BinarySearch
+9.PrefixSum
+10.Recurssion(Backtracking) 
+
+these all are used for arrays and strings to solve efficiently
+_________________________________________________________________
+
+FOR DSA
+1.LinkedList
+    Folds Hair And Tortouse(fast and slow pointer)
+    3 pointer Approch(Reversing linked list in place)
+
+2.Trees
+    BFS ,DFS (in BST)
+    TreeRotation
+    ComparingTwoTrees
+
+3.Graphs
+    BFS,DFS
+    prims and krushkals
+    Dijakstras
+    Floid warshals
+    BelMan ford 
+
+4.Tries
+    
+
+
