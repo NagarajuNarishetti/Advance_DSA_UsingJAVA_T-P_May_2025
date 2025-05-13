@@ -1,0 +1,9 @@
+even numbe XOR given next number
+odd number xor gives prev number 
+
+1^2^3...^n
+ if(n%4)== 1 1
+ if(n%4)==2 n+1
+ if(n%4)==3 0
+ if(n%5)==4 n
+ 
