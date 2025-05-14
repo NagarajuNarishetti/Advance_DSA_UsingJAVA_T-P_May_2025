@@ -1,7 +1,7 @@
 import java.util.*;
 public class LongestSubSequence {
     public static void main(String[] args) throws Exception {
-    Scanner sc=new Scanner(System.in);
+    // Scanner sc=new Scanner(System.in);
     // int[] arr = new int[] { 2, 3, 4, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7 , 3, 4, 5, 10, 9};
     int[] arr = new int[] {1,2,3,2,3,4,5,6,7,8,9};
     int ans=0,count=1;
