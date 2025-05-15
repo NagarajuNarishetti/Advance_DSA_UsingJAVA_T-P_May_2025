@@ -1,0 +1,82 @@
+Parameterized recursion
+functional recursion 
+Great! Let's clearly understand the two important types of recursion often seen in programming:
+
+---
+
+## 🔁 1. **Parameterized Recursion**
+
+### 📌 **Definition:**
+
+In **parameterized recursion**, the function carries additional **parameters** (like counters, accumulators, or results) whose values **change across recursive calls**. These parameters **help carry state** through the recursive call stack.
+
+---
+
+### 📘 **Example: Sum of first N numbers**
+
+```java
+public static void sum(int i, int total) {
+    if (i == 0) {
+        System.out.println("Sum is: " + total);
+        return;
+    }
+    sum(i - 1, total + i);  // Carrying sum in a parameter
+}
+```
+
+### 🔍 How it works:
+
+* Here, `i` controls the countdown.
+* `total` accumulates the sum.
+* This is **parameterized** because `total` holds the partial result.
+
+---
+
+## 🔁 2. **Functional Recursion (or Pure Functional Recursion)**
+
+### 📌 **Definition:**
+
+In **functional recursion**, we don’t carry state with parameters. Instead, we **solve the subproblem**, then **combine the result** using return values. Think of it like **a function returning an answer** instead of passing it forward.
+
+---
+
+### 📘 **Example: Sum of first N numbers**
+
+```java
+public static int sum(int n) {
+    if (n == 0) return 0;
+    return n + sum(n - 1);  // Combine result while returning
+}
+```
+
+### 🔍 How it works:
+
+* Each call returns a result.
+* The function waits for the result from `sum(n - 1)` and adds `n` to it.
+* This is **functional recursion** because we use return values to build the final answer.
+
+---
+
+## ✅ Summary Table:
+
+| Feature                | Parameterized Recursion                     | Functional Recursion                       |
+| ---------------------- | ------------------------------------------- | ------------------------------------------ |
+| Uses extra parameters? | Yes (to carry results or counters)          | No                                         |
+| Result mechanism       | Built while going deeper (forward pass)     | Built while returning (backward pass)      |
+| Use-case               | Better for accumulations, printing          | Better for returning values                |
+| Example task           | Printing sum, factorial (with side-effects) | Calculating sum, factorial, Fibonacci etc. |
+
+---
+
+### 🧠 Tip:
+
+* Use **parameterized recursion** when:
+
+  * You need to print or accumulate during the forward traversal.
+  * You want better control over intermediate state.
+  
+* Use **functional recursion** when:
+
+  * You just want a final return value.
+  * You don’t need to track or print in-between states.
+
