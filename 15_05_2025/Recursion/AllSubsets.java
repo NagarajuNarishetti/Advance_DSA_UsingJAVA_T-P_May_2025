@@ -53,8 +53,8 @@ public class AllSubsets {
                 System.out.println(list);
                 return;
             }
-            ArrayList<Integer> curr= new ArrayList<>();
-            curr
+            // ArrayList<Integer> curr= new ArrayList<>();
+            // curr
         }
     }
     public static void main(String[] args) throws Exception {
@@ -63,7 +63,7 @@ public class AllSubsets {
         subSetsSum(arr,0,new ArrayList<>());
         int target=5;
         System.out.println(checkTargetSum(arr,0,target));
-        printAllSubsetsWithK(arr,0,t,new ArrayList<>());
+        printAllSubsetsWithK(arr,0,target,new ArrayList<>());
         
     }
 }
