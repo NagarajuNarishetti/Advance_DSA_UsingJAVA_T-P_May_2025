@@ -1,0 +1,108 @@
+========================================
+ Arrays.sort() with Comparator & Lambda
+ From Basic to Advanced
+========================================
+
+✅ 1. Basic Arrays.sort()
+----------------------------
+This sorts elements using natural order:
+
+Example:
+---------
+String[] arr = {"apple", "banana", "kiwi"};
+Arrays.sort(arr); // Alphabetical sort
+System.out.println(Arrays.toString(arr));
+
+Output:
+--------
+[apple, banana, kiwi]
+
+Note: Uses lexicographical order for Strings.
+
+
+✅ 2. Custom Sorting Using Comparator
+--------------------------------------
+To sort differently (e.g., by string length), use Comparator.
+
+Example: Sort by string length
+-------------------------------
+Arrays.sort(arr, new Comparator<String>() {
+    public int compare(String a, String b) {
+        return a.length() - b.length();
+    }
+});
+
+
+✅ 3. Lambda Expression (Java 8+)
+-----------------------------------
+Cleaner syntax for custom comparators:
+
+Sort by length (ascending):
+----------------------------
+Arrays.sort(arr, (a, b) -> a.length() - b.length());
+
+
+
+✅ 4. Advanced Examples
+-------------------------
+
+🔁 Sort in reverse order by length:
+Arrays.sort(arr, (a, b) -> b.length() - a.length());
+
+🔤 Sort by last character:
+Arrays.sort(arr, (a, b) -> 
+    a.charAt(a.length() - 1) - b.charAt(b.length() - 1)
+);
+
+🧠 Using Comparator.comparing (Java 8+):
+----------------------------------------
+Sort by length:
+Arrays.sort(arr, Comparator.comparing(String::length));
+
+Reverse by length:
+Arrays.sort(arr, Comparator.comparing(String::length).reversed());
+
+
+✅ 5. Sorting Custom Objects
+------------------------------
+
+Example class:
+--------------
+class Student {
+    String name;
+    int marks;
+
+    Student(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+}
+
+Now sort by marks:
+--------------------
+Student[] students = {
+    new Student("Alice", 85),
+    new Student("Bob", 95),
+    new Student("Charlie", 75)
+};
+
+Using lambda:
+Arrays.sort(students, (a, b) -> a.marks - b.marks);
+
+Using Comparator:
+Arrays.sort(students, Comparator.comparingInt(s -> s.marks));
+
+
+✅ Summary Table
+------------------
+
+| Task                         | Code Example                                                   |
+|------------------------------|----------------------------------------------------------------|
+| Natural order                | Arrays.sort(arr);                                              |
+| By length (ascending)        | Arrays.sort(arr, (a, b) -> a.length() - b.length());           |
+| By length (descending)       | Arrays.sort(arr, (a, b) -> b.length() - a.length());           |
+| Using method reference       | Arrays.sort(arr, Comparator.comparing(String::length));        |
+| Reverse with method ref      | Arrays.sort(arr, Comparator.comparing(String::length).reversed()); |
+| Custom object field compare  | Comparator.comparingInt(s -> s.marks)                          |
+
+-------------------------------------------------------------
