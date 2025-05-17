@@ -3,7 +3,7 @@
  * every number has freq 2 only 1  number will have once
  */
 import java.util.*;
-public class Four { 
+public class UniqueElement { 
     public static void main(String[] args) throws Exception {
     Scanner sc=new Scanner(System.in);
     // int n=sc.nextInt();

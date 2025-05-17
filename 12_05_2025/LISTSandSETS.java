@@ -1,5 +1,5 @@
 import java.util.*;
-public class Two {
+public class LISTSandSETS {
     public static void removeDup( ArrayList<Integer> list){
         HashSet<Integer> set=new HashSet<>();
         //TC= O(n), SC=O(n) 
