@@ -1,9 +1,7 @@
-package BubbleSort;
 import java.util.*;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {6, 3, 4, 2, 9, 1, 5};
-
         // Outer loop for number of passes
         for (int i = 0; i < arr.length - 1; i++) {
             boolean isSorted = true; // Optimization flag
