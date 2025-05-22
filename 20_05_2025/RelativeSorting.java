@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Sort{
+public class RelativeSorting{ 
     public static void main(String[] args) {
         Integer [] arr1= {2,3,2,5,1,6,3,8,7,2,3};
         Integer [] arr2= {3,1,5,2};
