@@ -1,0 +1,1 @@
+set.remove(str.charAt(i));
