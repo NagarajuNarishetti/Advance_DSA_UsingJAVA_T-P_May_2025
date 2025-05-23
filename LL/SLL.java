@@ -23,6 +23,14 @@ public class SLL {
             head=newNode;
         }
     }
+    private static void addAtEnd(int data){
+        Node newNode= new Node(data);
+        Node temp=head;
+        while(temp!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
     
     private static void display(){
         Node temp=head;
