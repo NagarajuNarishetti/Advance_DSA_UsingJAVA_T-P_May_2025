@@ -1,0 +1,12 @@
+********* 92. Reverse Linked List II ********* 
+palindrome
+160. Intersection of Two Linked Lists
+loop starting point
+count of nodes
+datect end
+rev 2nd half
+rev ssl
+check palindrome
+find Intersection
+merge 2 sorted ll
+2.sum of 2 numbers

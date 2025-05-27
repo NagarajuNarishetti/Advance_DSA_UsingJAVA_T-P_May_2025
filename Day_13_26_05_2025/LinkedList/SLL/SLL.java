@@ -173,7 +173,5 @@ public class SLL {
         display();
         kthLargest(3);
         kthNodeFromLastOptimal(3);
-
-        
     }
 }
