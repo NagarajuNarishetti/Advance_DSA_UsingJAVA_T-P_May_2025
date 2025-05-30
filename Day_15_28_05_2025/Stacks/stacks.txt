@@ -1,0 +1,5 @@
+prefix               inifx                      postfix
+
+a+*(bc)-e                a+b*c-e             a+(bc)-e *
+-+a*(bc)e                                    a(bc)*+e -
+ 

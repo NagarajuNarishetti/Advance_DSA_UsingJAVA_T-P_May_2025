@@ -1,0 +1,7 @@
+traversal (pre,In ,Post)
+sum 
+even
+height
+serach
+cerate bst
+count leaf nodes
