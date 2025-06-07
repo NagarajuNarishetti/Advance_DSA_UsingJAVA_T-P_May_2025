@@ -1,6 +1,6 @@
 # 📚 Advanced DSA Using Java (May - June 2025)
 
-This repository contains all code and resources for the Advanced Data Structures and Algorithms course from May to June 2025.
+This repository contains all codes for the Advanced Data Structures and Algorithms
 
 ---
 
